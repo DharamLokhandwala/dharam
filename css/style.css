@@ -219,6 +219,7 @@ main {
 /* FOR UIUX PAGE */
 
 .quote-container{
+    min-height: 400px;
     margin-top: 5rem;
     width: 100%;
 }
