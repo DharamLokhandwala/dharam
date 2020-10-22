@@ -65,6 +65,29 @@ header{
     margin-top: 4vw;
     margin-bottom: 4vw;
 }
+.index-nav{
+    background-color: #f8f8f8;
+    box-shadow: none;
+    
+}
+
+.index-nav-div .index-nav{
+    margin-bottom: 10px;
+}
+
+
+.index-nav a{
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    padding-left: 15px;
+    text-decoration: none;
+    color: gray;
+}
+
+.index-nav a:hover{
+    cursor: pointer;
+    color: #3fc1a3;
+}
 .parallaxx {
     /* The image used */
     background-image: url("../images/Mockup-min-l.png");
