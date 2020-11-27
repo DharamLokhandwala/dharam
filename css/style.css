@@ -1,0 +1,593 @@
+html,body{
+
+    height: 100%;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    background-color: #f8f8f8;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+  }
+
+
+  nav{
+      background-color: transparent;
+  }
+
+.nav-wrapper{
+    box-shadow: none;
+}
+.navbar-contents{
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+}
+
+
+.navbar-contents .material-icons{
+    color: black;
+}
+
+.brand-name{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+.herosection{
+    background-color: #f8f8f8;
+    
+    background-attachment: fixed;
+    background-size: contain;
+    width: 100%;
+    display: table;
+   
+}
+
+.herosection .card{
+    box-shadow: none;
+    background: transparent;
+}
+
+
+
+.name-container{
+    font-family: 'Heebo', sans-serif;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+
+.name{
+    font-size: 3.0vw;
+}
+
+.display .row{
+    margin: 0;
+}
+
+
+.thumbnails {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform .3s;
+  }
+  
+  .thumbnails img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+  }
+  
+  .black {
+    text-align: center;
+    background: #000;
+    background-blend-mode: multiply;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .7;
+  }
+  
+  .title {
+    color: #fff;
+    font-size: 2em;
+    align-self: center;
+    position: absolute;
+    z-index: 10;
+  }
+  
+  .black, .title {
+    transition: opacity .3s;
+  }
+  
+  .thumbnails:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    z-index: 20;
+  }
+  
+  .thumbnails:hover .black,
+  .thumbnails:hover .title {
+    opacity: 0;
+  }
+  
+.index-nav{
+    background-color: #f8f8f8;
+    box-shadow: none;
+    
+}
+
+.index-nav-div .index-nav{
+    margin-bottom: 10px;
+}
+
+
+
+
+.index-nav a{
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    padding-left: 15px;
+    text-decoration: none;
+    color: gray;
+}
+
+.index-nav a:hover{
+    cursor: pointer;
+    color: #3fc1a3;
+}
+
+.idea-img img{
+    padding-top: 10vw;
+}
+.headline{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.section-title{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+.vision{
+    height: 100vh;
+}
+.helper{
+    height: 45vh;
+    display: table;
+}
+.helper-statement{
+    width: 100%;
+}
+.about-me{
+    
+    width: 100%;
+    height: 55vh;
+    display: table;
+}
+
+.broadway-society,.arcane{
+    height: 35vh;
+    display: table;
+}
+.card-image{
+    opacity: 1;
+}
+
+.about-body{
+    font-size: 1.4rem;
+    opacity: 1;
+    color: #424242;
+}
+
+.btn{
+    background-color: white;
+    color: black;
+    border: #819582 1px solid;
+    
+    box-shadow: none;
+}
+
+.btn:hover{
+    background-color: #819582;
+
+}
+
+.section-title h1{
+    font-size: 3.6rem;
+    opacity: 1;
+}  
+
+.navigation{
+    height: 100%;
+}
+.head{
+    width: 100%;
+}
+
+/* FOR UIUX PAGE */
+
+.quote-container{
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.quote{
+    width: 100%;
+}
+
+.quote h1{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 3.3rem;
+}
+.quote h4{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.quote-class{
+    padding-top: 10vw;
+}
+
+.quote-container a{
+    color: gray;
+}
+
+.quote-container a:hover{
+    color: black;
+}
+
+
+
+.design-title{
+    padding-top: 2.5vw;
+}
+
+
+#shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contactme{
+    background-color: #f8f8f8;
+    font-family: 'PT Sans', sans-serif;
+    opacity: 1;
+}
+
+.contactme-links{
+    margin: 2.8rem 0 1.68rem 0;
+}
+.contactme-links .fab{
+    font-size: 4.5rem;
+    padding: 3rem;
+}
+
+.buttons{
+    padding-top: 20px;
+}
+
+input[type=email]:not(.browser-default),input[type=password]:not(.browser-default){
+    border-bottom: #000 1px solid;
+  }
+  textarea.materialize-textarea:not(.browser-default){
+    border-bottom: #000 1px solid;
+    height: 100px;
+  }
+  input[type=text]:not(.browser-default){
+    border-bottom: #000 1px solid;
+  }
+  
+  
+  
+  input[type=email]:not(.browser-default):focus:not([readonly]),input[type=password]:not(.browser-default):focus:not([readonly]){
+    border-bottom: #000 1px solid;
+    box-shadow: none;
+  }
+  textarea.materialize-textarea:focus:not([readonly]){
+    border-bottom: #000 1px solid;
+    box-shadow: none;
+  }
+  input[type=text]:not(.browser-default):focus:not([readonly]){
+    border-bottom: #000 1px solid;
+    box-shadow: none;
+  }
+  
+  input[type=email]:not(.browser-default):focus:not([readonly]) + label{
+    color: #262626;
+  }
+  textarea.materialize-textarea:not(.browser-default):focus:not([readonly]) + label{
+    color: #262626;
+  }
+  input[type=text]:not(.browser-default):focus:not([readonly]) + label{
+    color: #262626;
+  }
+
+
+  .btn{
+      border-radius: 5px;
+      height: 40px;
+      background-color: transparent;
+      border: black 1px solid;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  }
+  .btn:hover{
+    background-color: black;
+    color: #9bc489;
+  }
+
+  .btn:focus{
+    background-color: black;
+    color: #9bc489;
+  }
+
+
+
+
+
+.art-drawer{
+    padding-top: 10vw;
+    height: fit-content;
+    width: 100%;
+}
+
+.page-footer{
+    background-color: #f8f8f8;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.social-media-icons .fab{
+    font-size: 2.2rem;
+    padding-right: 2.5vw;
+    
+}
+
+.social-media-icon .fab:hover{
+    color: #3e3e3e;
+    
+}
+
+.contactme-btn{
+    width: fit-content;
+}
+
+.contactme-btn a{
+    color: black;
+}
+
+.contactme-btn a:hover{
+    background-color: black;
+    color: #9bc489;
+}
+
+.madhi{
+    min-height: 800px;
+    background:url(../images/madhi/madhibg.png);
+    background-size: cover;
+    padding-left: 100px;
+}
+.madhi h2, .madhi h5{
+    font-family: 'Playfair Display', serif !important;
+    line-height: 35px;
+}
+.madhi h2{
+    padding-bottom: 30px;
+    font-weight: 600px;
+}
+.madhi .btn{
+    padding: 12px;
+    height: fit-content;
+    box-shadow: none;
+    border: #fff solid 2px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 6px;
+}
+.madhi .btn:hover{
+    padding: 12px;
+    height: fit-content;
+    box-shadow: none;
+    border: #fff solid 2px;
+    color: #343670;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+
+
+.sharell{
+    min-height: 800px;
+    background:url(../images/madhi/sharellbg.png);
+    background-size: cover;
+    padding-left: 100px;
+}
+.sharell h2, .sharell h5{
+    font-family: 'Playfair Display', serif !important;
+    line-height: 35px;
+}
+.sharell h2{
+    padding-bottom: 30px;
+    font-weight: 600px;
+}
+.sharell .btn{
+    padding: 12px;
+    height: fit-content;
+    box-shadow: none;
+    border: #fff solid 2px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 6px;
+}
+.sharell .btn:hover{
+    padding: 12px;
+    height: fit-content;
+    box-shadow: none;
+    border: #fff solid 2px;
+    color: #343670;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+@media screen and (min-width: 800px){
+    .about-me-img{
+        padding-top: 5vw;
+        
+    }
+}
+
+@media screen and (max-width: 820px){
+
+    .madhi{
+        padding: 5px;
+    }
+    .madhi h2{
+        font-size: 45px;
+        font-family: 'Playfair Display', serif !important;
+        line-height: 55px;
+    }
+    .sharell{
+        padding: 5px;
+    }
+    .sharell h2{
+        font-size: 45px;
+        font-family: 'Playfair Display', serif !important;
+        line-height: 55px;
+    }
+
+    .overlay h1 {
+        font-size: 2.5rem;
+
+    }
+
+    .section{
+        padding-top: 4rem;
+    }
+
+    .herosection{
+        padding-top: 20px;
+        background-color: #f8f8f8;
+        display: table;
+        width: 100%;
+    }
+    .name-container .hello{
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .name-container .name{
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2.6rem;
+    }
+
+    
+    .about-me{
+        padding-top: 20vw;
+        height: fit-content;
+        width: 100%;
+    }
+
+    .headline{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+
+    
+    .section-title h4{
+        font-size: 25px;
+        
+    }
+ 
+    .contactme{
+        padding-top: 60px;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        background-color: #ffffff;
+        width: 100%;
+        display: table;
+    }
+    .contactme h1{
+        margin: 0;
+    }
+    .contactme img{
+        padding-top: 20px;
+    }
+    .social-media-icon .fab{
+        font-size: 2.5rem;
+        float: left;
+        padding-right: 2.5vw;
+        
+    }
+
+    .quote-container{
+        padding-left: 3.2vh;
+        padding-right: 3.2vh;
+        min-height: 350px;
+    }
+    .quote h1{
+        font-size: 2.2rem;
+    }
+    .quote h4{
+        font-size: 1.5rem;
+    }
+    .design-title h2{
+        font-size: 2.1rem;
+    }
+
+
+    .name-container .ml11 {
+        font-weight: 600;
+        font-size: 9.2vw;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+      }
+      .index-nav a{
+          font-size: 12px;
+      }
+}
+
+
+.ml11 {
+    font-weight: 700;
+    font-size: 2.5vw;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  
+  .ml11 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #000000;
+    transform-origin: 0 50%;
+  }
+  
+  .ml11 .line1 { 
+    top: 0; 
+    left: 0;
+  }
+  
+  .ml11 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
