@@ -25,7 +25,7 @@
   --body-color: #171717;
   --container-color: #171717;
 
-  --body-font: "Poppins", sans-serif;
+  --body-font: "Work Sans", sans-serif;
   --font-family-briyani: "Work Sans" , sans-serif;
   --font-family-kumar-one-outline: "Work Sans", sans-serif;
 
@@ -436,8 +436,8 @@ img {
 }
 .projects_card_img_container .project_card_title {
   position: absolute;
-  bottom: 1rem;
-  right: -5rem;
+  bottom: 0.5rem;
+  left: 1rem;
   font-size: var(--big-font-size);
 }
 .projects_card .project_card_info {
