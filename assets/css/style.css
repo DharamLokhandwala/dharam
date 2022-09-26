@@ -352,6 +352,7 @@ img {
 
 .home_title_block h1 {
   font-weight: var(--font-bold);
+  font-family: "poppins";
 }
 .home_title_main span {
   display: inline-block;
@@ -445,7 +446,7 @@ img {
   padding-top: 0.5rem;
 }
 .projects_card .project_card_info {
-  color: #928dae;
+  color: #d6d6d6;
 }
 .projects_card .project_card_info span:not(:first-child) {
   margin-left: 1rem;
