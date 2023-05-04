@@ -9,25 +9,26 @@
 
   --hue-color: 250;
 
-  --first-color: #AA9AFF;
+  --first-color: #4937a4;
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-  --title-color: #f5f5f5;
+  --title-color: #000000;
   /* --title-color: hsl(var(--hue-color), 8%, 15%); */
   /* --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%); */
-  --text-color: #f5f5f5;
+  --text-color: #000;
   --text-color-light: #ecebf2;
   --text-color-lighter: #ababab;
   --input-color: hsl(var(--hue-color), 70%, 96%);
   /* --body-color: hsl(var(--hue-color), 60%, 99%); */
-  --body-color: #171717;
+  --body-color: #fcfcfc;
   --container-color: #171717;
 
   --body-font: "Work Sans", sans-serif;
   --font-family-briyani: "Work Sans" , sans-serif;
-  --font-family-kumar-one-outline: "Work Sans", sans-serif;
+  --font-family-title: 'Gloock', serif;
+  --font-family-curve: "La Belle Aurore", cursive;
 
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -95,6 +96,7 @@ body {
   height: 100% !important;
   width: 100% !important;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -136,6 +138,7 @@ img {
 /* Classes */
 .active {
   color: var(--first-color);
+  font-weight: bold;
 }
 .o9-5 {
   opacity: 0.95;
@@ -165,8 +168,16 @@ img {
 
 .section_title {
   font-size: var(--h1-font-size);
+  padding-bottom: 1rem;
+  font-family: 'Albert Sans', sans-serif;
 }
 
+.section_subheading{
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 150%;
+}
 .section_subtitle {
   font-size: var(--small-font-size);
   font-family: var(--font-family-briyani);
@@ -239,6 +250,7 @@ img {
 }
 .nav_logo {
   display: none;
+  font-family: var(--font-family-curve);
 }
 .nav_menu {
   height: fit-content;
@@ -291,6 +303,7 @@ img {
   .nav_home {
     display: revert;
   }
+  
 }
 .nav_home {
   display: none;
@@ -298,11 +311,11 @@ img {
 
 .nav_list {
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1rem;
 }
 .nav_item a {
   text-decoration: none;
-  color: white;
+  color: #000;
 }
 
 .nav_link {
@@ -340,19 +353,31 @@ img {
   top: 0;
 }
 
+.bullets {
+  margin-top: 1rem;
+  list-style-type: disc;
+  padding: revert;
+  line-height: 150%;
+}
+
+.bullets li {
+  color: #000;
+}
+
 /* Home - Screen1 */
 
 .home_title_block {
-  font-size: 2.1rem;
+  font-size: 2.7rem;
   display: flex;
   flex-direction: column;
   padding-top: 8rem;
   padding-bottom: 4rem;
+  line-height: 150%;
 }
 
 .home_title_block h1 {
   font-weight: var(--font-bold);
-  font-family: "poppins";
+  font-family: 'Raleway', sans-serif;
 }
 .home_title_main span {
   display: inline-block;
@@ -360,6 +385,10 @@ img {
 .home_title_subtitle {
   font-family: var(--font-family-briyani);
   font-weight: 200;
+  font-size: var(--h3-font-size);
+  width: 60%;
+  line-height: 150%;
+  padding-top: 30px;
 }
 .home_title_subtitle span {
   color: var(--first-color);
@@ -376,6 +405,7 @@ img {
 }
 .projects_title {
   font-family: var(--font-family-briyani);
+  color: #171717;
 }
 .projects_card {
   transition: all ease-in-out 0.2s;
@@ -442,14 +472,23 @@ img {
   font-size: var(--big-font-size);
 }
 .projects_card .project_card_info {
-  font-size: var(--smaller-font-size);
+  font-size: var(--normal-font-size);
   padding-top: 0.5rem;
 }
 .projects_card .project_card_info {
-  color: #d6d6d6;
+  color: #0d0d0d;
 }
 .projects_card .project_card_info span:not(:first-child) {
   margin-left: 1rem;
+}
+.highlights{
+  color:#4937a4;
+  font-weight: var(--font-semi-bold);
+}
+
+/* Personal background */
+.personal_background h1{
+  padding-bottom: 1rem;
 }
 
 /* Experience section */
@@ -685,7 +724,7 @@ img {
 .socials_container {
   display: flex;
   flex-flow: row wrap;
-  padding: 4rem 0;
+  padding: 3rem 0;
   /* align-items: center; */
 }
 
@@ -716,7 +755,7 @@ img {
   font-size: var(--h1-font-size);
 } */
 
-.socials_cards {
+/* .socials_cards {
   display: flex;
   flex: 1;
   flex-flow: row wrap;
@@ -727,7 +766,7 @@ img {
   padding: 2rem 0;
 }
 .socials_card > .title {
-  /* display: flex; */
+   display: flex; 
   align-items: center;
 }
 .socials_card .title h1 {
@@ -760,6 +799,21 @@ img {
 .socials_cards,
 .socials_card.socials_card_header {
   flex: 3;
+} */
+.socials_link{
+  text-align: center;
+  width: 100%; 
+  height: 5vh; 
+  display: flex;
+  justify-content: space-evenly;
+}
+.socials_link img{
+  width: 2.5rem;
+}
+@media screen and (max-width: 586px) {
+  .socials_link img{
+  width: 1.5rem;
+  }
 }
 
 /* about me */
