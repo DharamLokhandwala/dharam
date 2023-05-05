@@ -284,12 +284,12 @@ img {
   flex: 50%;
 }
 @media screen and (max-width: 350px) {
-  .aboutme .flex-item-right, .flex-item-left {
+  .aboutme .flex-item-right, .aboutme .flex-item-left {
     flex: 100%;
   }
 }
 @media screen and (max-width: 786px) {
-  .aboutme .flex-item-right, .flex-item-left {
+  .aboutme .flex-item-right, .aboutme .flex-item-left {
     flex: 100%;
   }
 }
