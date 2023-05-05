@@ -269,7 +269,6 @@ img {
   color: var(--first-color);
 }
 
-/* Flex container */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
