@@ -269,17 +269,17 @@ img {
   color: var(--first-color);
 }
 
-.flex-container {
+.aboutme .flex-container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.flex-item-left {
+.aboutme .flex-item-left {
   padding: 10px;
   flex: 50%;
 }
 
-.flex-item-right {
+.aboutme .flex-item-right {
   padding: 10px;
   flex: 50%;
 }
