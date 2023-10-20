@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Biryani:wght@200;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 :root {
@@ -9,7 +10,7 @@
 
   --hue-color: 250;
 
-  --first-color: #4937a4;
+  --first-color: #D60003;
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -25,16 +26,16 @@
   --body-color: #fcfcfc;
   --container-color: #171717;
 
-  --body-font: "Work Sans", sans-serif;
-  --font-family-briyani: "Work Sans" , sans-serif;
-  --font-family-title: 'Gloock', serif;
+  --body-font: "Inter", sans-serif;
+  --font-family-briyani: "Inter" , sans-serif;
+  --font-family-title: 'Inter', sans-serif;
   --font-family-curve: "La Belle Aurore", cursive;
 
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
-  --normal-font-size: 0.938rem;
+  --normal-font-size: 1.2rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
@@ -81,10 +82,10 @@ p {
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3rem;
-    --h1-font-size: 2.25rem;
+    --h1-font-size: 2.5rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
+    --normal-font-size: 1.2rem;
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
   }
@@ -250,7 +251,7 @@ img {
 }
 .nav_logo {
   display: none;
-  font-family: var(--font-family-curve);
+  font-family: 'Inter', sans-serif;
 }
 .nav_menu {
   height: fit-content;
@@ -402,7 +403,9 @@ img {
 
 .home_title_block h1 {
   font-weight: var(--font-bold);
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  line-height: 110%;
 }
 .home_title_main span {
   display: inline-block;
@@ -431,6 +434,8 @@ img {
 .projects_title {
   font-family: var(--font-family-briyani);
   color: #171717;
+  font-size: var(--h1-font-size);
+  width: 50%;
 }
 .projects_card {
   transition: all ease-in-out 0.2s;
@@ -442,7 +447,7 @@ img {
 }
 .projects_card .project_card_title {
   text-decoration: none;
-  color: white;
+  color: #000;
 }
 .projects_card img {
   object-fit: cover;
@@ -450,7 +455,7 @@ img {
 .projects_grid {
   display: grid;
   grid-template-columns: 50% 50%;
-  row-gap: 100px;
+  row-gap: 150px;
   column-gap: 1px;
   padding-bottom: 100px;
   margin-top: 1rem;
@@ -488,10 +493,14 @@ img {
   height: 100%;
 }
 .project_card_title {
-  font-family: var(--font-family-kumar-one-outline);
+  bottom: 0.5rem;
+  left: 1rem;
+  font-size: var(--h1-font-size);
+  font-weight: 500;
+  color: #000;
+  font-family: 'Inter', sans-serif;
 }
 .projects_card_img_container .project_card_title {
-  position: absolute;
   bottom: 0.5rem;
   left: 1rem;
   font-size: var(--big-font-size);
@@ -501,19 +510,42 @@ img {
   padding-top: 0.5rem;
 }
 .projects_card .project_card_info {
-  color: #0d0d0d;
+  color: #6c6c6c;
 }
-.projects_card .project_card_info span:not(:first-child) {
-  margin-left: 1rem;
+.project_sub_info{
+  margin-top: 20px;
 }
+
 .highlights{
-  color:#4937a4;
+  color:#D60003;
   font-weight: var(--font-semi-bold);
+}
+.hover-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Place GIF below static image */
+}
+
+.static-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* Place static image above GIF */
+  transition: opacity 0.3s; /* Smooth transition */
+}
+
+.projects_card_img_container:hover .static-image {
+  opacity: 0; /* Hide static image on hover */
 }
 
 /* Personal background */
 .personal_background h1{
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 /* Experience section */
@@ -868,7 +900,14 @@ img {
   font-size: 1.5rem;
   justify-content: center;
 }
- 
+
+.play_projects{
+  margin-top: 100px;
+}
+.play_projects .title{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
 
 /* Media Queries */
