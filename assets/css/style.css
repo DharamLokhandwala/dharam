@@ -76,6 +76,9 @@ p {
     --container-left-margin: auto;
     --container-padding: 1rem;
   }
+  .hide-mobile{
+    display: none;
+  }
 }
 
 /* Font size for large screen */
@@ -924,6 +927,13 @@ img {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+  .play_projects{
+    margin-top: 20px;
+  }
+  .play_projects .title{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
 }
 
 @media screen and (max-width: 568px) {
@@ -960,6 +970,20 @@ img {
 
   .header {
     padding: 0;
+  }
+  .play_projects{
+    margin-top: 20px;
+  }
+  .play_projects .title{
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+  }
+  img.fullwidth {
+    width: 100%;
+    padding: 0;
+  }
+  .home_title_block h1{
+    font-size: 3rem;
   }
 }
 @media screen and (max-width: 786px) {
@@ -1035,6 +1059,9 @@ img {
 
 /* For larger devices */
 @media screen and (min-width: 786px) {
+  .hide-desktop{
+    display: none;
+  }
   .nav_logo {
     display: revert;
   }
