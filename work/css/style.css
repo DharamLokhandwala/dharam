@@ -69,7 +69,22 @@ p {
 .container {
   /* padding-left: 200px; */
 }
-
+.greybg{
+  background-color: #f1f1f1;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;    
+}
+.prompt{
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+  color: #4e4e4e;
+  line-height: 150%;
+  padding-bottom: 0.5rem;
+}
 h1.title {
   margin-top: 0;
   margin-bottom: 1.5rem;
@@ -194,7 +209,7 @@ h3.subtitle {
   justify-content: space-evenly;
 }
 .socials_link img{
-  width: 2.5rem;
+  width: 1.5rem;
 }
 @media screen and (max-width: 586px) {
   .socials_link img{
